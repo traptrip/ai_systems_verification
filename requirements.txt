@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+tensorflow
+seaborn
+scikit-learn
+cleanlab 
+umap-learn
