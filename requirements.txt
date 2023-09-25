@@ -7,3 +7,4 @@ scikit-learn
 cleanlab 
 umap-learn
 tensorflow
+pydot
