@@ -54,8 +54,8 @@ def plot_curve(epochs, hist, list_of_metrics):
 
 if __name__ == "__main__":
     np.set_printoptions(linewidth=200)
-    train = pd.read_csv("d1.csv")
-    test = pd.read_csv("mnist_test.csv")
+    train = pd.read_csv("./data/d1.csv")
+    test = pd.read_csv("./data/mnist_test.csv")
 
     X = train.iloc[:, 1:].values / 255.0
     X_test = test.iloc[:, 1:].values / 255.0
@@ -75,8 +75,8 @@ if __name__ == "__main__":
     plot_curve(epochs, hist, list_of_metrics_to_plot)
 
     model.evaluate(x=X_test, y=y_test, batch_size=batch_size)
-    model.save("checkpoint")
+    # model.save("checkpoint")
 
-    loaded_model = tf.keras.models.load_model("v1")
+    # loaded_model = tf.keras.models.load_model("v1")
 
     # loaded_model.predict(<element>)
